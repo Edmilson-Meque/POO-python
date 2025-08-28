@@ -1,0 +1,24 @@
+
+class Smartphone:
+    def __init__(self, marca, modelo, memoria):
+        self.marca = marca
+        self.modelo = modelo
+        self.memoria = memoria
+
+    def ligar(self):
+        print(f"{self.marca} {self.modelo} está ligando... 📱")
+
+    def mostrar_info(self):
+        print(f"Marca: {self.marca}, Modelo: {self.modelo}, Memória: {self.memoria}GB")
+
+
+
+class SmartphoneGamer(Smartphone):
+    def __init__(self, marca, modelo, memoria, sistema_resfriamento):
+        super().__init__(marca, modelo, memoria)  # chama o construtor da classe pai
+        self.sistema_resfriamento = sistema_resfriamento
+
+    def mostrar_info(self):
+      
+        print(f"[GAMER] {self.marca} {self.modelo}, {self.memoria}GB RAM, "
+              f"Sistema de resfriamento: {self.sistema_resfriamento}")

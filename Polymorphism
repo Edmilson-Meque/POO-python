@@ -1,0 +1,25 @@
+
+class Veiculo:
+    def move(self):
+        print("O veículo está se movendo...")
+
+
+class Carro(Veiculo):
+    def move(self):
+        print("Dirigindo 🚗")
+
+
+class Aviao(Veiculo):
+    def move(self):
+        print("Voando ✈️")
+
+
+class Barco(Veiculo):
+    def move(self):
+        print("Navegando 🚤")
+
+
+veiculos = [Carro(), Aviao(), Barco()]
+
+for v in veiculos:
+    v.move()
